@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/tariharaligi">
+
+    <fragment
+        android:id="@+id/tariharaligi"
+        android:name="com.basaran.tarihkronolojisi.tariharaligi"
+        android:label="fragment_tariharaligi"
+        tools:layout="@layout/fragment_tariharaligi" >
+        <action
+            android:id="@+id/action_tariharaligi_to_yuzveikiyuzFragment"
+            app:destination="@id/yuzveikiyuzFragment" />
+        <action
+            android:id="@+id/action_tariharaligi_to_besyuzbinFragment"
+            app:destination="@id/besyuzbinFragment" />
+        <action
+            android:id="@+id/action_tariharaligi_to_binbizbesyuzFragment"
+            app:destination="@id/binbizbesyuzFragment" />
+        <action
+            android:id="@+id/action_tariharaligi_to_binbesyuzikibinFragment"
+            app:destination="@id/binbesyuzikibinFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yuzveikiyuzFragment"
+        android:name="com.basaran.tarihkronolojisi.yuzveikiyuzFragment"
+        android:label="fragment_yuzveikiyuz"
+        tools:layout="@layout/fragment_yuzveikiyuz" >
+        <action
+            android:id="@+id/action_yuzveikiyuzFragment_to_tariharaligi"
+            app:destination="@id/tariharaligi" />
+    </fragment>
+    <fragment
+        android:id="@+id/besyuzbinFragment"
+        android:name="com.basaran.tarihkronolojisi.besyuzbinFragment"
+        android:label="fragment_besyuzbin"
+        tools:layout="@layout/fragment_besyuzbin" >
+        <action
+            android:id="@+id/action_besyuzbinFragment_to_tariharaligi"
+            app:destination="@id/tariharaligi" />
+    </fragment>
+    <fragment
+        android:id="@+id/binbizbesyuzFragment"
+        android:name="com.basaran.tarihkronolojisi.binbizbesyuzFragment"
+        android:label="fragment_binbizbesyuz"
+        tools:layout="@layout/fragment_binbizbesyuz" >
+        <action
+            android:id="@+id/action_binbizbesyuzFragment_to_tariharaligi"
+            app:destination="@id/tariharaligi" />
+    </fragment>
+    <fragment
+        android:id="@+id/binbesyuzikibinFragment"
+        android:name="com.basaran.tarihkronolojisi.binbesyuzikibinFragment"
+        android:label="fragment_binbesyuzikibin"
+        tools:layout="@layout/fragment_binbesyuzikibin" >
+        <action
+            android:id="@+id/action_binbesyuzikibinFragment_to_tariharaligi"
+            app:destination="@id/tariharaligi" />
+    </fragment>
+</navigation>
