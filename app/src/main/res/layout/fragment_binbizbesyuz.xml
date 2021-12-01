@@ -3,15 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".binbizbesyuzFragment">
+    tools:context=".binbizbesyuzFragment"
+    android:background="#6F3FA851">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="1000 ve 1500 ARASI"
-        android:textSize="70sp"
+        android:text="1000 ve 1500 Arası Seçim Yaptınız"
+        android:textSize="50sp"
         android:textColor="@color/black"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:layout_gravity="center"/>
 
 </FrameLayout>

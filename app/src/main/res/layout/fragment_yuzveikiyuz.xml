@@ -3,15 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".yuzveikiyuzFragment">
+    tools:context=".yuzveikiyuzFragment"
+    android:background="#3B58BD">
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0 ve 500 ARASI"
-        android:textSize="70sp"
+        android:text="0 ve 500 Arası Seçim Yaptınız"
+        android:textSize="50sp"
         android:gravity="center"
+        android:layout_gravity="center"
         android:textColor="@color/black"
         />
 </FrameLayout>
